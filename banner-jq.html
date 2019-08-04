@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>-= banner-jq =-</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+        <style type="text/css">
+             .imgsstyle {
+                position:absolute;
+                left: 10px;
+            }
+            a {
+                color:FF0000;
+            }
+        </STYLE>
+
+    </head>
+    <body> 
+        
+        <DIV ID="imgs" class="imgsstyle">
+            <img width=468 height=60 name="imgsback" src="images/1.png" border="0" target="_blank">
+        </DIV>
+
+        <DIV id="cover" class="imgsstyle" >
+    <a href=""> 
+        <img width=468 height=60 name="imgcover" src="images/imgtransj115.gif" border="0" target="_blank"></a>
+</DIV> 
+ 
+        <script type="text/javascript" src="jquery-banner/jq.js"></script>     
+       
+       <script>  
+//-------------------------- banner -------------------------------------------- 
+         $('body').banner({
+              pause: 80,
+              standstill: 2000
+         });
+         
+       $('body').banner('gotourl');
+       
+       // срочно прочитать !!! http://habrahabr.ru/post/158235/
+         
+       </script>
+    </body>
+</html>
